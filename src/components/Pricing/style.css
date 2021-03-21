@@ -1,0 +1,386 @@
+.body-comp4-container {
+    width: 100%;
+    background-color: #f6f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.body-comp4-title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-comp4-title h2, p {
+    text-align: center;
+}
+
+.body-comp4-title h2{
+    color: #0e1a35;
+}
+
+.body-comp4-title p {
+    margin-top: 15px;
+    color: #8492af;
+    text-align: center;
+}
+
+.body-comp4-top {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-example-img {
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+.definition1 {
+    width: 80%;
+}
+
+.definition1 p,h2{
+    text-align: start;
+}
+
+.definition1.definition2 h2{
+    color: #0e1a35;
+    font-weight: bold;
+}
+
+.definition1 p{
+    color: #8492af;
+    margin-top: 10px;
+}
+
+.definition2 {
+    width: 80%;
+    text-align: end;
+}
+
+.definition2 h2{
+    color: #0e1a35;
+    font-weight: bold;
+}
+
+.definition2 p{
+    color: #8492af;
+    margin-top: 10px;
+}
+
+.definition2 h2,p{
+    text-align: end;
+}
+
+
+.body-comp4-bottom {
+    width: 100%;
+    padding-top: 60px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-comp4-bottom h2 {
+    font-size: 2em;
+    color: #0e1a35;
+    margin-bottom: 50px;
+}
+
+.pricing-top-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-container {
+    width: 65%;
+}
+
+.pricing-container {
+    margin: 30px 0 0 0;
+    box-shadow:  2px -2px 15px 0px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-title {
+    color: #0e1a35;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+
+.pricing-amount {
+    display: flex;
+    align-items: baseline;
+}
+
+.dollar {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+.schedule {
+    color: #8492af;
+    font-weight: bold;
+}
+
+.pricing-container i {
+    margin-right: 10px;
+}
+
+.check {
+    color: #5284ff;
+}
+
+.x-mark {
+    color: #f83c7b;
+}
+
+.pricing-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.pricing-container ul li {
+    margin-bottom: 10px;
+    color: #8492af;
+    font-family: inherit;
+}
+
+.join-cont {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8492af;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.join-cont p {
+    text-align: center;
+    color: #8492af;
+    font-weight: bold;
+}
+
+.btn-cont {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-btn {
+    width: 170px;
+    height: 40px;
+    background-color: #5584ff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 0 10px;
+    color: #ffffff;
+}
+
+.btn-cont:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #8492af;
+    left: 0;
+    top: 50%;
+}
+
+.btn-cont:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #8492af;
+    left: 0;
+    top: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .definition1 {
+        width: 250px;
+        margin: 0 0 45% -60%;
+        position: absolute;
+    }
+    
+    .definition1 p{
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+    .definition2 {
+        width: 250px;
+        position: absolute;
+        text-align: end;
+        margin: 30% 10% 0 70%;
+    }
+    
+    .definition2 p{
+        font-weight: normal;
+        font-size: 14px;
+        text-align: end;
+    }
+
+    .pricing-top-cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pricing-container {
+        width: 35%;
+        margin: 30px 1% 0 1%;
+    }
+
+    .btn-cont:after{
+        width: 100px;
+    }
+    .btn-cont:before{
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .body-comp4-title {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .body-comp4-title h2{
+        font-size: 3.2em;
+        font-weight: lighter;
+    }
+    
+    .body-comp4-title p {
+        margin-top: 35px;
+        color: #8492af;
+        text-align: center;
+    }
+
+    .body-comp4-top {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .body-comp4-top h2 {
+        font-weight: bold;
+    }
+    
+    .temp-example-img {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .definition1 {
+        width: 250px;
+        margin: 0 0 40% 10%;
+        position: absolute;
+    }
+    
+    .definition1 p{
+        font-weight: normal;
+        font-size: 14px;
+    }
+    
+    .definition2 {
+        width: 250px;
+        position: absolute;
+        text-align: end;
+        margin: 20% 0 0 70%;
+    }
+    
+    .definition2 p{
+        font-weight: normal;
+        font-size: 14px;
+        text-align: end;
+    }
+
+
+
+    .pricing-top-cont {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pricing-container {
+        width: 30%;
+        margin: 30px 5% 0 5%;
+    }
+    
+    .join-cont {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #8492af;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    
+    .join-cont p {
+        text-align: center;
+        color: #8492af;
+        font-weight: bold;
+    }
+    
+    .btn-cont {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .join-btn {
+        width: 170px;
+        height: 40px;
+        background-color: #5584ff;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 10px 0 10px;
+        color: #ffffff;
+    }
+
+    .btn-cont:after{
+        width: 150px;
+    }
+    .btn-cont:before{
+        width: 150px;
+    }
+    
+}

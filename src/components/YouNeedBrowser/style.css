@@ -1,0 +1,99 @@
+.you-need-browser-container {
+    width: 100%;
+    background-color: #f6f7fa;
+    overflow: hidden;
+}
+
+.you-need-browser-text {
+    padding: 30px;
+    padding-top: 50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #8492af;
+    text-align: left;
+    font-weight: bold;
+}
+
+.you-need-browser-text h2 {
+    color: #0e1a35;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.you-need-browser-text {
+}
+
+.checks {
+    width: 90%;
+    margin-top: 25px;
+    display: flex;
+    color: #5584ff;
+    margin-left: 20px;
+}
+
+.checks p {
+    text-align: start;
+}
+
+.checks i {
+    margin-right: 5px;
+}
+
+.all-you-need-img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .checks {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .you-need-browser-container {
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .you-need-browser-text {
+        flex-direction: row;
+        padding: 0 !important;
+    }
+
+    .you-need-browser-text h2 {
+        margin-bottom:  30px;
+    }
+
+    .you-need-browser-text p {
+        margin-bottom:  30px;
+    }
+
+    .web-left {
+        width: 50%;
+        height: 50%;
+        padding: 10%;
+    }
+    
+    .checks {
+        margin-left: 0px;
+    }
+
+    .checks p{
+        margin-bottom: 0px;
+    }
+    
+    .all-you-need-img {
+        width: auto;
+        height: 80%;
+        margin: 70px 0 0 60%;
+        padding: auto;
+        position: absolute;
+        overflow: hidden;
+    }
+}

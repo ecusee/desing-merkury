@@ -1,0 +1,134 @@
+.features-container {
+    margin-top: 130px;
+}
+.see-more {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.see-more-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 60px;
+}
+
+.see-more-item i{
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    color: #5584ff;
+}
+
+.see-more-content {
+    text-align: center;
+}
+
+.see-more-content h2 {
+    margin-bottom: 10px;
+    color: #0e1a35;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.see-more-content p {
+    font-size: 1.1em;
+    color: #8492af;
+    text-align: center;
+}
+
+.see-more-btn {
+    margin-top: 50px;
+    font-size: 1.3em;
+    border: 1px solid rgba(132, 146, 175, 0.3);
+    width: 280px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.empty-container {
+    width: 100%;
+    height: 130px;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .features-container {
+        margin-top: 230px;
+    }
+    
+    .see-more-item i{
+        font-size: 3em;
+    }
+    
+    .see-more-content h2 {
+        font-size: 1.5em;
+    }
+    
+    .see-more-content p {
+        font-size: 1.1em;
+    }
+    
+    .see-more-btn {
+        font-size: 1.1em;
+        width: 240px;
+    }
+    
+    .empty-container {
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .features-container {
+        margin-top: 230px;
+    }
+
+    .see-more {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .see-more-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    
+    .see-more-item i{
+        font-size: 3.5em;
+        margin-bottom: 40px;
+        color: #5584ff;
+    }
+    
+    .see-more-content h2 {
+        font-size: 1.7em;
+    }
+    
+    .see-more-content p {
+        font-size: 1em;
+    }
+    
+    .see-more-btn {
+        font-size: 1.1em;
+        width: 250px;
+        height: 35px;
+    }
+    
+    .empty-container {
+        height: 100px;
+    }
+}

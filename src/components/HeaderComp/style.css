@@ -1,0 +1,235 @@
+:root {
+    --color-1: #0e1a35;
+    --color-2: #5584ff;
+    --color-3: #ffffff;
+}
+
+
+.header-comp-container {
+    width: 100%;
+    background-color: var(--color-1);
+}
+
+.header-comp-container {
+    color: var(--color-3);
+}
+
+.img1 {
+    position: absolute;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.img2 {
+    position: absolute;
+    width: 100%;
+}
+
+.header-comp-container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding: 50px 25px 20px 25px;
+}
+
+.header-comp-container nav h2,button{
+    font-size: 2em;
+    background: none;
+    border: none;
+    margin: 0;
+}
+
+.header-comp-container nav button{
+    color: var(--color-3);
+}
+
+.header-comp-container nav button:focus{
+    outline: none;
+}
+
+
+.header-comp-container nav ul{
+    position: fixed;
+    background-color: var(--color-2);
+    flex-direction: column;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    top: 130px;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(120%);
+    transition: transform 0.4s ease;
+}
+
+nav ul.show {
+    z-index: 1;
+    transform: translateX(0);
+    padding: 0;
+}
+
+.header-comp-container nav li{
+    list-style: none;
+    margin: 15px;
+    
+}
+
+.header-comp-container nav li a{
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 170px;
+    height: 40px;
+    border: 1px solid var(--color-1);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-comp-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 0 20px;
+}
+
+.header-text1 {
+    font-size: 2em;
+    color: var(--color-3);
+    font-weight: 100;
+    text-align: center;
+}
+.header-text2 {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #8492af;
+    font-weight: bold;
+}
+.get-started-btn {
+    margin-top: 80px;
+    width: 250px;
+    height: 50px;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    border-radius: 35px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 140px;
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-text1 {
+        font-size: 3.2em;
+    }
+
+    .header-text2 {
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+
+    .get-started-btn {
+        font-size: 1em;
+    }
+
+    .img3 {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        top: 130px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .header-comp-container nav button{
+        display: none;
+    }
+
+    .header-comp-container nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-comp-container nav ul{
+        margin: 0;
+        padding: 0;
+        position: unset;
+        transform: none;
+        transition: none;
+        box-shadow: none;
+        width: unset;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-comp-container nav ul li a:hover {
+        color: var(--color-2)
+    }
+
+    .login-btn {
+        width: 170px;
+        height: 40px;
+        border: 1px solid var(--color-2);
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-btn a {
+        color: var(--color-2) !important;
+    }
+
+    .header-comp-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+    
+    .header-text1 {
+        font-size: 3.2em;
+    }
+
+    .header-text2 {
+        margin-top: 30px;
+        font-size: 1.7em;
+    }
+
+    .get-started-btn {
+        font-size: 1.2em;
+    }
+    
+    .img3 {
+        width: 50%;
+        margin: auto;
+        position: relative;
+        top: 150px;
+    }
+}

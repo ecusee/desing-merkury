@@ -1,0 +1,269 @@
+.dran-and-drop-container {
+    width: 100%;
+    height: auto;
+    background: #0e1a35;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dran-and-drop-img1 {
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+}
+.dran-and-drop-img2 {
+    width: 100%;
+    position: absolute;
+}
+
+.drag-imgs-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.drag-top-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffffff;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.drag-top-text span {
+    color: #8492af;
+    margin: 0 20px;
+}
+
+.drag-img-1 {
+    width: 70%;
+    position: relative;
+    padding-top: 20px;
+}
+.drag-img-2{
+    width: 80%;
+    position: relative;
+    padding-left: 20px;  
+}
+
+.progres {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointer-cont {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #8492af;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.pointer2-cont {
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: #8492af;
+    position: absolute;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg) scale(1);
+    animation: pulse 1.5s linear;
+    animation-iteration-count: 15;
+}
+
+.hand {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 25%;
+    animation: pulse 1.5s;
+    animation-iteration-count: 15;
+}
+
+.drop-here-box {
+    width: 70%;
+    margin-top: 40px;
+    height: 60px;
+    border: 1px solid #8492af;
+    border-style: dashed;
+    color: #8492af;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-content {
+    width: 80%;
+    padding: 50px 0 0 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drag-content h2 {
+    color: #ffffff;
+    text-align: start;
+    margin-bottom: 25px;
+}
+
+.drag-content p {
+    color: #8492af;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.arrows {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #8492af;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.arrow i {
+    color: #8492af;
+    font-size: 25px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+        
+    .drag-imgs-top {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .drop-left {
+        width: 50%;
+    }
+
+    .drop-right {
+        width: 50%;
+    }
+
+    .progres {
+        margin-left: 25%;
+        margin-top: 30%;
+    }
+
+    .drag-content {
+        width: 80%;
+        padding: 25px 0 0 45px;
+    }
+}
+
+@media screen and (min-width: 1199px) {
+
+    .body-comp3-img2 {
+        height: 27%;
+        opacity: 0.5;
+    }    
+
+    .drag-drop {
+        display: flex;
+        width: 100%;
+    }
+
+    .drag-imgs-top {
+        width: 65%;
+        height: 80%;
+        flex-direction: row;
+        align-items: baseline;
+        margin: auto;
+    }
+
+    .drop-left {
+        width: 50%;
+    }
+
+    .drop-right {
+        width: 50%;
+    }
+
+    .progres {
+        margin-left: 15%;
+        margin-top: 20%;
+    }
+
+    .drag-content {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .drag-content p {
+        padding-right: 10px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.1);
+    }
+
+    20% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.2);
+    }
+
+    40% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    60% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
